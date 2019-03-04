@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="img/favicon-16x16.png"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <title>Standard Semicon CMS</title>
+    <script src="js/form.js"></script>
+</head>
+
+<body>
+    <header class="top-content">
+        <h2>Standard Semicon<span class="blinking-cursor">|</span></h2>
+        <h3>Number one in customer trust since 2020</h3>
+    </header>
+    <!-- Top 3 Forms -->
+    <div class="grid-wrapper">
+            <!-- Customers Form -->
+            <div class="cus">
+                <a href="#" onclick="myCustomersFunction()">Customers</a>
+                <div id="myCustomersDropdown" class="hidden-customers">
+                    <a href="#" onclick="addCustomerIntel()">Add Intel</a>
+                    <a href="#" onclick="addCustomerSamsung()">Add Samsung</a>
+                    <a href="#" onclick="addCustomerTEL()">Add Tokyo Electron</a>
+                </div>
+                <script src="js/drop_customers.js"></script>
+            </div>
+            <!-- Orders Form -->
+            <div class="ord">
+                <a href="#" onclick="myOrderFunction()">Orders</a>
+                <div id="myOrderDropdown" class="hidden-orders">
+                    <a href="#" onclick="addProductAltus();addAltusPrice()">Add Altus</a>
+                    <a href="#">Order</a>
+                    <a href="#">Order</a>
+                </div>
+                <script src="js/drop_orders.js"></script>
+            </div>
+            <!-- Users Form -->
+            <div class="users">
+                <a href="#" onclick="myUsersFunction()">Users</a>
+                <div id="myUsersDropdown" class="hidden-users">
+                    <a href="#">User</a>
+                    <a href="#">User</a>
+                    <a href="#">User</a>
+                </div>
+                <script src="js/drop_users.js"></script>
+            </div>
+    </div>
+    <!-- Order Processing Forms -->
+    <div class="received-orders">
+        <a href="#">Customer</a>
+        <a href="#">Product</a>
+        <a href="#">Price $$$</a>
+        <a href="#">Date Placed</a>
+    </div>
+    <div class="pending-orders">
+        <a href="#">Customer</a>
+        <a href="#">Product</a>
+        <a href="#">Price $$$</a>
+        <a href="#">Date Placed 3-2-2019</a>
+    </div>
+    <!-- Working Template, should be used to add new forms -->
+    <div class="completed-orders">
+        <div id="item-a">
+            <a href="#">Customer</a>
+            <div id="new-customer"></div>
+        </div>
+        <div id="item-b">
+            <a href="#">Product</a>
+            <div id="new-product"></div>
+        </div>
+        <div id="item-c">
+            <a href="#">Price</a>
+            <div id="new-price"></div>
+        </div>
+        <div id="item-d">
+            <a href="#">Date Received</a>
+            <div id="new-date"></div>
+            <script src="js/new-date.js"></script> 
+        </div>
+
+    </div>
+    <footer>
+        <p>Copyright &copy; 2019 <a href="mailto:standardsemicon@mail.to"><span class="footer-elements">Standard Semicon&copy;</span></a> | All Rights Reserved | Website Development by <a
+                href="mailto:olexandr.goloshchapov@pcc.edu"><span class="footer-elements">Olexandr
+                    Goloshchapov</span></a></p>
+        <a href="https://github.com/olexandrg">
+            <img src="img/github.png" alt="github">
+        </a>
+        <a href="https://www.linkedin.com/in/olexandr-goloshchapov-975364130">
+            <img src="img/linkedin.png" alt="linkedin">
+        </a>
+    </footer>
+</body>
+
+</html>
