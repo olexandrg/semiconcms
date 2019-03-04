@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Open+Sans|Libre+Baskerville|Source+Sans+Pro");
+/* logo variables */
+/* header variables */
+/* primary text variables */
+/* General Box Shadow */
+/* Main Style */
+html, body {
+  margin: 0;
+  display: grid;
+  min-height: 100vh; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  color: #fef4de; }
+
+body {
+  background-color: #353535;
+  margin: 0; }
+
+/* Header */
+.top-content {
+  background-color: #5d5d5d;
+  display: grid;
+  justify-items: center;
+  height: auto;
+  border-bottom: 0.4em solid #FF7256; }
+  .top-content h2 {
+    font-family: "Libre Baskerville", sans-serif;
+    color: #00ff7f;
+    font-size: 350%;
+    font-weight: bold;
+    align-self: end;
+    margin: 0; }
+  .top-content h3 {
+    font-family: 'Roboto',sans-serif;
+    font-size: 80%;
+    color: #fef4de;
+    font-weight: 100;
+    padding-right: 1em;
+    font-style: italic;
+    justify-self: end;
+    align-self: end;
+    margin: 0; }
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 20em repeat(3, 1fr) 20em;
+  grid-template-rows: 10em; }
+  .grid-wrapper .cus {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: center; }
+  .grid-wrapper .ord {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    justify-self: center; }
+  .grid-wrapper .users {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    justify-self: center; }
+  .grid-wrapper a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #fef4de;
+    text-decoration: none;
+    padding: 0 1em; }
+  .grid-wrapper a:hover {
+    color: #FF7256; }
+  .grid-wrapper .hidden-customers, .grid-wrapper .hidden-orders, .grid-wrapper .hidden-users {
+    display: none;
+    background-color: #8b7d6b;
+    border: 1px solid black;
+    padding: 1em 0;
+    border-radius: 5px; }
+    .grid-wrapper .hidden-customers a, .grid-wrapper .hidden-orders a, .grid-wrapper .hidden-users a {
+      margin: auto;
+      font-size: 120%; }
+    .grid-wrapper .hidden-customers a:hover, .grid-wrapper .hidden-orders a:hover, .grid-wrapper .hidden-users a:hover {
+      color: #3caea3; }
+  .grid-wrapper .hidden-customers {
+    grid-column: 2/3; }
+  .grid-wrapper .hidden-orders {
+    grid-column: 3/4; }
+  .grid-wrapper .hidden-users {
+    grid-column: 4/5; }
+  .grid-wrapper .show {
+    display: grid; }
+
+.received-orders, .pending-orders, .completed-orders {
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  grid-template-rows: repeat(0.2fr);
+  grid-auto-flow: column;
+  border: 5px solid black;
+  padding-left: 1em; }
+  .received-orders a, .received-orders div, .pending-orders a, .pending-orders div, .completed-orders a, .completed-orders div {
+    font-family: "Open Sans", sans-serif;
+    color: #fef4de; }
+
+.received-orders {
+  background-color: #e23242;
+  border-bottom: none; }
+
+.pending-orders {
+  background-color: #fdaa33;
+  border-bottom: none; }
+
+.completed-orders {
+  background-color: #00BC6C; }
+
+footer {
+  font-family: "Open Sans", sans-serif, sans-serif;
+  margin-top: auto;
+  /*sticks the footer to the bottom*/
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  height: 3em;
+  background-color: #5d5d5d;
+  border-top: 0.4em solid #41A082; }
+  footer p {
+    color: #d6d6d6;
+    font-size: 0.7em;
+    padding: 1em; }
+  footer a {
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none; }
+  footer img {
+    padding: 0.25em;
+    width: 30px;
+    height: 30px; }
+  footer .footer-elements {
+    color: #FF7256; }
+
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 1em;
+  color: #00ff7f;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite; }
+
+@keyframes "blink" {
+  from, to {
+    color: transparent; }
+  50% {
+    color: #00ff7f; } }
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent; }
+  50% {
+    color: #00ff7f; } }
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent; }
+  50% {
+    color: #00ff7f; } }
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent; }
+  50% {
+    color: #00ff7f; } }
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent; }
+  50% {
+    color: #00ff7f; } }
